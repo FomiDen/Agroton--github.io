@@ -1,0 +1,837 @@
+@font-face {
+    font-family: 'Nunito-Sans';
+    src: url('../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.woff2') format('woff2-variations');
+    src: url('../fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.woff2') format('woff2') tech('variations');
+    font-weight: 300 700;
+}
+@font-face {
+    font-family: 'WorkSans-light';
+    src: url('../fonts/WorkSans-Light.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'WorkSans-regular';
+    src: url('../fonts/WorkSans-Regular.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'WorkSans-medium';
+    src: url('../fonts/WorkSans-Medium.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'WorkSans-semiBolt';
+    src: url('../fonts/WorkSans-SemiBold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.35;
+    color: #0E0D0D;
+    background-color: #FDFDF0;
+}
+.container {
+    max-width: 1440px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.container-big {
+    max-width: 1840px;
+    padding: 0 10px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    font-family: 'Nunito-Sans';
+    font-weight: 500;
+}
+.menu__btn {
+    display: none;
+}
+.menu__list {
+    display: flex;
+    gap: 0 30px;
+}
+.menu__link {
+    text-transform: uppercase;
+}
+.header__contacts {
+    text-transform: uppercase;
+    padding: 10px 40px;
+    display: inline-block;
+    background-color:#0E0D0D ;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Nunito-Sans';
+}
+.about__top{
+    text-align: center;
+    color: #FDFDF0;
+    background-image: url(../images/header__img.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-transform: uppercase;
+    min-height: 768px;
+    border-radius: 20px;
+}
+.about__title {
+    font-family: 'WorkSans-semiBolt';
+    font-weight: 600;
+    padding-top: 65px;
+    font-size: 250px;
+    line-height: 1;
+}
+.about__text{
+     font-family: 'WorkSans-medium' ;
+     font-weight: 500;
+     font-size: 32px;
+     line-height: 1.2;
+}
+.about__acheviements {
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -85px;
+}
+.about__acheviement {
+    display: flex;
+    background-color: #F4F4E7;
+    max-width: 580px;
+    
+    border-radius: 20px;
+    padding: 14px 10px;
+    flex-wrap: wrap;
+}
+.about__acheviement-imgbox { 
+    position: relative;
+}
+.about__acheviement-img {
+    width: 214px;
+    height: 142px;
+}
+.about__acheviement-arrow {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+.about__acheviement-content {
+    max-width: 320px;
+    max-height: 121px;
+    padding-left: 25px;
+}
+.about__acheviement-title {
+    font-family: 'Nunito-Sans';
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.about__acheviement-text {
+    font-family: 'Nunito-Sans';
+    font-size: 14px;
+    font-weight: 300;
+}
+.orange__semiBolt{
+    font-weight: 600;
+    color: #F2A531;
+}
+.orange__bold {
+    color: #F2A531;
+    font-weight: 700;
+}
+.black__semiBolt{
+    font-weight: 600;
+    color: #000000;
+}
+.about__company{
+    background-color: #F4F4E7;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.about__company-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 0 90px;
+    text-align: center;
+}
+.about__company-item {
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.about__company-title {
+    font-family: 'WorkSans-semiBolt';
+    font-weight:600 ;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+.about__company-text {
+    font-family: 'Nunito-Sans';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 50px;
+}
+.about__progress-text {
+ font-family: 'WorkSans-light';
+ font-weight: 200;
+ font-size: 40px;
+ color: #0E0D0D;
+ margin-bottom: 40px;
+}
+
+.black__medium {
+    font-weight: 500;
+    color: #0E0D0D;
+}
+.orange__medium{
+    font-weight: 500;
+    color: #F2A531;
+}
+.about__progress-box {
+    display: flex;
+    gap: 0 140px;
+    margin-bottom: 181px;
+}
+.about__progress-titleTextBox {
+    font-family: 'Nunito-Sans';
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    padding-right: 50px;
+}
+.about__progress-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Nunito-Sans';
+    border-bottom: 1px solid rgb(172, 187, 201);
+    margin-bottom: 20px;
+}
+.column2 {
+    font-family: 'Nunito-Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+dt {
+    font-size: 18px;
+}
+.products__wrapper {
+    padding: 50px 0;
+    border-radius: 20px;
+    background-color: #F4F4E7;
+}
+.products__title {
+    text-transform: uppercase;
+    font-family: 'WorkSans-medium';
+    font-weight: 500;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 1.3;
+}
+.products__img {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.products__btn-link {
+    font-family: 'Nunito-Sans';
+    font-weight: 500;
+    font-size: 16;
+    margin: 0 auto;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 19px 97px 19px 38px;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 50px;
+    position: relative; 
+}
+.arrow__link-btn {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+}
+.productc__btn {
+    display: flex;
+    margin: 0 auto;
+}
+.slogan {
+    padding-top: 115px;
+    margin-bottom: 130px;
+}
+.slogan__tite-text {
+    text-transform: uppercase;
+    line-height: 1.3;
+    font-family: 'WorkSans-medium';
+    font-weight: 500;
+    font-size: 40px;
+    color: #000000;
+    text-align: center;
+    
+    
+}
+.slogan__agroton-text {
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'WorkSans-semiBolt';
+    font-weight: 600;
+    font-size: 300px;
+    color:#F2A531;
+    line-height: 1;
+   
+}
+.slogan__img {
+    margin-top: -141px;
+    
+}
+
+.partners__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+}
+.logo__img {
+    padding-top: 30px;
+    margin-bottom: 126px;
+    margin-left: 20px;
+}
+.partner__item-list {
+    display: flex;
+    gap: 15px;
+    
+}
+.partners__left-box {
+    display: block;
+}
+.partners__title-text {
+    padding-top: 10px;
+    font-family: 'WorkSans-regular';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 238px;
+    color: #0E0D0D;
+}
+.partners__text {
+    font-family: 'Nunito-Sans';
+    font-weight: 300;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #0E0D0D;
+    max-width: 565px;
+}
+.partners__list-img {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1px;
+}
+.img__list-left {
+    padding-right: 10px;
+    max-width: 350px;
+}
+.partner__arrow {
+    padding-bottom: 10px;
+    margin-left: 29.65px;
+}
+.partner__listtext {
+    font-family: 'Nunito-Sans';
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.img__right-box {
+    height: 100%;
+    width: 100%;
+}
+
+.partners__rightbox-text {
+    font-family: 'Nunito-Sans';
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    padding: 30px 82px 30px 30px;
+    background-color: #0D1615;
+    border-radius: 10px;
+    
+}
+.partners__flex-rightbox-top {
+    background-color: #F4F4E7;
+    display: grid;
+    margin-bottom: 5px;
+    border-radius: 20px;
+}
+.partners {
+    margin-bottom: 150px;
+}
+.container-big{
+    background-color: #F4F4E7;
+    margin-bottom: 40px;
+}
+.blog__inner {
+    padding-bottom: 100px;
+}
+.blog__title {
+    text-align: center;
+    padding-top: 100px;
+    margin-bottom: 40px;
+    font-family: 'WorkSans-medium';
+    font-weight: 500;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1.3;
+}
+.blog__post-item {
+    display: flex;
+    gap: 44px;
+}
+.blog__post-arrow {
+    width: 14px;
+    height: 18px;
+}
+.blog__img-left {
+    width: 580px;
+    height: 276px;
+    margin-bottom: 32px;
+}
+.blog__post-data {
+    color: #F2A531;
+    font-family: 'Nunito-Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+.blog__post-titlearrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__post-title {
+    font-family: 'WorkSans-medium';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: #101828;
+}
+.blog__post-action {
+    font-family: 'Nunito-Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #667085;
+}
+.blog__post-upperblock{
+    display: flex;
+    margin-bottom: 32px;
+}
+.blog__post-img2 {
+    padding-right: 24px;
+    height: 200px;
+    width: 320px;
+}
+.blog__post-item_txt{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.blog__post-imgarrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog__post-bottomblock {
+    display: flex;
+}
+.footer {
+    background-color: #0E0D0D;
+    padding: 100px 0;
+    color: #fff;
+}
+.footer__bottom {
+    padding: 15px 10px 0 10px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #fff;
+    font-size: 14px;
+    font-family: 'Nunito-Sans';
+    font-weight: 400;
+}
+
+.footer__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding-right: 100px;
+    gap: 20px;
+}
+.footer__element-title {
+    text-transform: uppercase;
+    font-family: 'Nunito-Sans';
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.footer__item + .footer__item {
+    padding-top: 15px;
+}
+.footer__item {
+    font-family: 'Nunito-Sans';
+    font-weight: 400;
+    font-size: 16px;
+}
+.footer__item-address {
+    font-style: normal;
+    font-family: 'Nunito-Sans';
+}
+@media (max-width:1600px) {
+    .container-big{
+        padding: 0;
+    }
+    .slogan__agroton-text {
+        font-size: 200px;
+    }
+    .slogan__img {
+        margin-top: -100px;
+    }
+}
+@media (max-width:1280px) {
+    .about__title {
+        font-size: 180px;
+    }
+    .about__text {
+        font-size: 30px;
+    }
+    .about__acheviements{
+        justify-content: space-around;
+    }
+    .partners__inner {
+        gap: 80px;
+    }
+    .img__list-left {
+        padding-right: 25px;
+    }
+    .blog__post-item {
+        flex-wrap: wrap;
+        gap: 30px 0;
+    }
+    .blog__post-leftbox {
+        margin: 0 auto;
+    }
+    .blog__img-left {
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 70%;
+        
+        
+    }
+    .blog__post-data.post__data1{
+        text-align: center;
+    }
+    .blog__post-titlearrow {
+        justify-content:space-evenly;
+        
+    }
+}
+@media (max-width:1130px) {
+    .about__progress-text {
+        font-size: 30px;
+    }
+    .about__acheviements {
+        gap: 50px;
+    }
+    .about__company-list {
+        gap: 0 20px;
+    }
+    .about__progress-box {
+        gap: 0 50px;
+    }
+    .partners__inner {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .partners__title-text {
+        margin-bottom: 50px;
+    }
+    .partners__text {
+        margin: 0 auto;
+    }
+    .products__btn-link.partners-btn2{
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .slogan__agroton-text {
+        font-size: 100px;
+    }
+    .slogan__tite-text {
+        font-size: 30px;
+    }
+    .slogan__img {
+        margin-top: -60px;
+    }
+}
+@media (max-width:1024px) {
+    .about__title {
+        padding-top: 120px;
+        font-size: 120px;
+    }
+    .about__text {
+        padding-top: 30px;
+        font-size: 22px;
+    }
+    .about__acheviements {
+        flex-wrap: wrap;
+    }
+    .about__company-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about__progress-box{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about__progress-img {
+        margin: 0 auto;
+        width: 50%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 30px;
+        border-radius: 20px;
+    }
+    .about__progress-titleTextBox {
+        margin-bottom: 55px;
+    }
+    .slogan__img {
+        margin-top: -50px;
+    }
+
+}
+@media (max-width:980px) {
+    .header__contacts {
+        margin-right: 65px;
+    }
+    .footer__top {
+        display: flex;
+        padding-right: 0;
+        flex-wrap: wrap;
+    }
+    .footer__logo {
+        width:  100%;
+        margin-bottom: 30px;
+    }
+    .menu__list {
+        position: absolute;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 20px;
+        padding: 95px 0;
+        gap: 20px 0;
+        top: 0;
+        transform: translateY(-100%);
+        transition: transform .5s ease;
+    }
+    .menu__list.menu--active {
+        transform: translateY(0);
+    }
+    .menu__btn {
+        display: flex;
+        width: 40px;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        position: relative;
+        z-index: 5;
+    }
+    .menu__btn span {
+        width: 100%;
+        height: 5px;
+        background-color: #000000;
+    }
+    .menu {
+        order: 1;
+    }
+}
+@media (max-width:620px) {
+    .about__title {
+        font-size: 50px;
+    }
+    .about__text {
+        padding: 20px 30px 0;
+        font-size: 18px;
+    }
+    .about__acheviement {
+        display: grid;
+        
+    }
+    .about__acheviement-img{
+        margin: 0 auto;
+    }
+    .about__acheviement-arrow {
+        right: 55px;
+    }
+    .about__acheviement-title{
+        padding-top: 10px;
+        margin-bottom: 15px;
+    }
+    .about__acheviement-text {
+        font-size: 12px;
+        margin: 0 auto;
+    }
+    .about__company-list {
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+    }
+    .about__progress-item {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 0;
+        padding-bottom: 10px;
+    }
+    .about__progress-text {
+        font-size: 25px;
+    }
+    .slogan {
+        padding-top: 50px;
+        margin-bottom: 50px;
+    }
+    .slogan__agroton-text {
+        font-size: 60px;
+    }
+    .slogan__tite-text {
+        font-size: 20px;
+    }
+    .slogan__img {
+        margin-top: -30px;
+    }
+    .about__progress-box {
+        margin-bottom: 60px;
+    }
+    .about__progress-titleTextBox {
+        padding-right: 0;
+    }
+    .about__progress-img {
+        width: 100%;
+    }
+    .products__img {
+        grid-template-columns: repeat(2,1fr);
+        
+    }
+    .blog__inner {
+        padding-bottom: 60px;
+    }
+    .blog__post-upperblock {
+        flex-wrap: wrap;
+        
+    }
+    .blog__post-img2 {
+        padding: 0;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .blog__post-data {
+        text-align: center;
+    }
+    .blog__post-titlearrow {
+        justify-content: space-between;
+    }
+    .blog__post-bottomblock {
+        flex-wrap: wrap;
+    }
+    .partners__rightbox-text {
+        padding: 30px 10px 30px 10px;
+    }
+}
+@media (max-width:540px) {
+    .footer__top {
+        display: block;
+    }
+    .footer__element {
+        padding-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:510px) {
+    .header__contacts {
+        margin-right: 0;
+    }
+    .footer__bottom {
+        display: block;
+        padding: 30px 0 0 0;
+    }
+    .footer__bottem-item {
+        margin-bottom: 15px;
+    }
+    .header__inner {
+        flex-wrap: wrap;
+        gap: 30px 65px
+    }
+    .menu {
+        order: 0;
+    }
+    .header__contacts {
+        margin-left: auto;
+    }
+}
+@media (max-width:340px) {
+    .about__top {
+        min-height: 600px;
+    }
+    .about__acheviement-arrow {
+        right: 45px;
+    }
+    .about__progress-text {
+        font-size: 22px;
+    }
+    .about__progress-img {
+        width: 100%;
+    }
+    .about__progress-titleTextBox {
+        padding-right: 20px;
+    }
+    .slogan__agroton-text {
+        font-size: 60px;
+    }
+    .slogan__tite-text {
+        font-size: 20px;
+    }
+    .slogan__img {
+        margin-top: -25px;
+    }
+    .products__title {
+        font-size: 30px;
+    }
+    .products__img {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .partners__title-text {
+        font-size: 30px;
+    }
+   
+}
+@media (max-width:500px) {
+    .partners__list-img {
+    grid-template-columns: repeat(1,1fr);
+   }
+}
